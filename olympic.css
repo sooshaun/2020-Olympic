@@ -1,5 +1,5 @@
-body {
-	margin: auto;
+* {
+    margin: auto;
 }
 /* =================================== */
 .navbar {
@@ -408,3 +408,76 @@ background-color: #333;
   top: 30%; */
 
 }
+
+/* =================================== */
+/* This one is for the footer */
+.footer{
+    position: relative;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;   /* to place it in the middle*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  ul li{
+  /*   list-style: none; /*to turn off the default bullet*/
+    margin: 5px 5px;
+    display: inline-block; /* can not see the difference yet*/
+  }
+  
+  ul li a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;   /*to set the icon in the middle of the yellow. Therefore set the equal value to width and height*/
+    font-size: 30px;    /*control the icon sign*/
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.5s;
+    background: yellow;  
+    overflow: hidden;  /*to hide the second line from viewing*/
+  }
+  
+  ul li a i{
+    display: block;
+    width: 100%;
+    color: blue;
+    transition: 0.5s;
+   }
+  
+  /* The first line and 2 line  */
+  ul li:hover a i:nth-child(1)  /*to have the first one to jump or second one to jump*/
+  {
+   transform: translateY(-50px); /*to jump vertically up*/  
+  }
+  
+  ul li:hover a i:nth-child(2)  /*to have the first one to jump or second one to jump*/
+  {
+   transform: translateY(-50px); /*to jump vertically up*/
+    color: red;
+  }
+  /* ================================== */
+  /* The option */
+  ul li:hover:nth-child(1) a  /*to have the first one to jump or second one to jump*/
+  {
+    background: green;
+  }
+  ul li:hover:nth-child(2) a /*to have the first one to jump or second one to jump*/
+  {
+    background: purple;
+  }
+  ul li:hover:nth-child(3) a  /*to have the first one to jump or second one to jump*/
+  {
+    background: pink;
+  }
+  ul li:hover:nth-child(4) a /*to have the first one to jump or second one to jump*/
+  {
+    background: black;
+  }
+  /* ================================== */
