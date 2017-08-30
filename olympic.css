@@ -1,0 +1,410 @@
+body {
+	margin: auto;
+}
+/* =================================== */
+.navbar {
+  overflow: hidden;
+  background-color: #847E7E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display :none;
+}
+
+.navbar a {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* =========================================== */
+video { 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	transition: 1s opacity;
+}
+
+.stopfade { 
+	opacity: 0.5;
+}
+
+.tokyo { 
+	font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+	font-weight:100; 
+	background: rgba(0,0,0,0.3);
+	color: white;
+	padding: 4rem; 
+	width: 85%;
+    margin: 4rem 2rem 2rem 2rem;
+	/* float: right; */
+	font-size: 1.2rem;
+}
+
+/*need to fix panasonic heading*/
+h3 {
+	background:rgba(0,0,0,0.5);
+	padding: .5rem;
+}
+
+/* .olympic img {
+width: 100%;
+height: auto;
+} */
+
+.panasonic-official img {
+	width: 100%;
+	height: auto;
+}
+
+.panasonic-girl img {
+	width: 100%;
+	height: auto;
+}
+
+.panasonic-sponsor img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+color: #005FAE;
+}
+
+/* ================= */
+.flex{
+  display: flex;
+}
+
+.companyName img{
+  width: 350px /*0px*/;
+  height: auto;
+  display:none;
+}
+
+.companyName{
+  padding-top:40px;
+  width:auto;
+}
+
+
+.word{
+  position: absolute;
+  top: 27.5%;
+  transform: translateY(-50%);  
+  /*padding-left: 220px;*/
+/*   width: 60px; */
+/*   margin-left: 50px; */
+  width: 100%;
+  text-shadow: 0px 4px 8px rgba(0,0,0,.5);
+  float: right;
+  display: inline-block;
+  font-size: 1.8rem;  
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: white;
+  padding-left: 10px;
+      }
+  
+.word span{
+   position: absolute;
+   top: 0px;
+   overflow: hidden;
+   animation: animate 18s linear infinite; 
+   opacity: 0;
+ }
+
+@keyframes animate {
+
+	0%{
+		opacity: 0;
+		transform: translateY(-50px);    
+	}
+
+	5%{
+		opacity: 1;
+		transform: translateY(0px);    
+	}
+
+	8%{
+		opacity: 1;
+		transform: translateY(0px);    
+	}
+
+	20%{
+		opacity: 0;
+		transform: translateY(50px);    
+	} 
+
+	100%{
+		opacity: 0;
+		transform: translateY(50px);    
+	}   
+}
+
+.word span:nth-child(1)	{  
+	animation-delay: 0s;
+}
+.word span:nth-child(2) {  
+	animation-delay: 3s;
+}
+.word span:nth-child(3){  
+	animation-delay: 6s;
+}
+.word span:nth-child(4){  
+	animation-delay: 9s;
+}
+.word span:nth-child(5){  
+	animation-delay: 12s;
+}
+
+
+.slider {
+  max-width: 100%;
+  /* height: 560px; */
+  margin: 2em auto;
+  overflow: hidden;
+  height: 440px;
+}
+
+.slider figure div {
+  width: 20%;
+  float: left;
+}
+
+.slider figure img {
+  width: 100%;
+  float: left;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+
+  10% {
+    left: 0%;
+  }
+
+  12% {
+    left: -100%;
+  }
+
+  22% {
+    left: -100%;
+  }
+
+  24% {
+    left: -200%;
+  }
+
+  34% {
+    left: -200%;
+  }
+
+  36% {
+    left: -300%;
+  }
+
+  46% {
+    left: -300%;
+  }
+
+  48% {
+    left: -400%;
+  }
+
+  58% {
+    left: -400%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  70% {
+    left: -300%;
+  }
+
+  72% {
+    left: -200%;
+  }
+
+  82% {
+    left: -200%;
+  }
+
+  84% {
+    left: -100%;
+  }
+
+  94% {
+    left: -100%;
+  }
+
+  96% {
+    left: 0%;
+  }
+}
+
+/* ====================== */
+
+
+/*  css for mobile header */
+
+header{
+  position: relative;
+  height :50px;
+  width :100%;
+  background: #847E7E;
+  line-height: 47.3px;
+  font-size: 2rem;  
+  font-weight: bolder;
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  color:#1B1B8F;
+  padding-left: 10px;
+}
+
+#pana{
+  max-width :400px;
+  height:  45px;
+  width :85%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color:#fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#mask{
+background-color: #333;
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+
+#menu {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  overflow: hidden;
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  transition: left .5s, right .5s;
+  background-color: #333;
+  opacity:0.8;
+  z-index:  11;
+}
+
+.toggle {
+  position:absolute;
+  cursor: pointer;
+  z-index:  10;
+  transition: 0.2s;
+  color :white;
+  font-size :1em;
+  right:40px;
+}
+
+.toggle:hover{
+  opacity:0.6;
+}
+
+#close {
+  position: absolute;
+  top :10px;
+  left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  transform: translateX(-50px);
+  z-index:  10;
+  color :white;
+   transition: 0.2s;
+}
+
+#close:hover{
+  opacity:0.6;
+}
+
+#open {
+  display: none;
+}
+
+#open:checked ~ #menu {
+  right: 0;
+}
+
+#open:checked ~ #mask {
+  opacity :0.6;
+}
+
+#open:checked ~ #close {
+  transform: translateX(0);
+    transition: 0.5s;
+}
+
+
+/*    for responsive design */
+@media screen and (min-width: 768px) {
+  .navbar {
+   display:block;
+  }
+  .headwrap{
+    display:none;
+  }
+
+  .companyName img{
+    display: block;
+}
+ 
+/*   .flex{
+  postiion: relative;
+  top: 30%; */
+
+}
